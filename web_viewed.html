@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel=" t">
+    <style>
+        #bodyp {}
+        
+        #head1 {
+            text-align: center;
+            margin: 0%;
+            padding: 0%;
+            font-size: 69px;
+            font-family: 'Ranchers', cursive;
+            letter-spacing: 5px;
+        }
+        
+        #head2 {
+            text-align: center;
+            font-size: 30px;
+            padding: 2%;
+            margin: 0%;
+        }
+        
+        #area1 {
+            margin: 0px;
+            width: 522px;
+            height: 132px;
+            margin-left: 395px;
+            margin-top: 9px;
+            font-size: 28px;
+            font-family: 'Ranchers', cursive;
+        }
+        
+        .b1 {
+            margin-left: 394px;
+            margin-top: 9px;
+        }
+    </style>
+</head>
+
+<body id="bodyp">
+    <h1 id="head1">The Text Analyzer</h1>
+    <h3 id="head2">Enter your text below</h3>
+    <form action="/removepunc" method="get">
+        <textarea name="user_inp" id="area1" cols="30" rows="10"></textarea><br>
+        <input type="checkbox" name="removepunc" style="margin-left: 394px;">Remove Punctuation<br>
+        <input type="checkbox" name="uppercase" style="margin-left: 394px;">UPPERCASE<br>
+        <input type="checkbox" name="newlr" style="margin-left: 394px;">Remove New Line<br>
+        <input type="checkbox" name="esr" style="margin-left: 394px;">Extra Space remover<br>
+        <input type="checkbox" name="cc" style="margin-left: 394px;">Character Count<br>
+        <button type="submit" class="b1">Analyze Text</button><br>
+        <button type="reset" class="b1">Reset</button>
+    </form>
+
+</html>
